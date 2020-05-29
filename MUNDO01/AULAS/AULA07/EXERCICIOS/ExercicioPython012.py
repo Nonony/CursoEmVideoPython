@@ -6,4 +6,4 @@ desc = float(input('Qual o valor de desconto que será aplicado? '))
 perdesc = desc / 100
 # Abater o valor do desconto do valor total do produto
 valdesc = valor - (valor * perdesc)
-print('O produto custa R${} sem desconto e R${} com desconto.'.format(valor, valdesc))
+print('O produto custa R${} sem desconto e R${:.2f} com desconto.'.format(valor, valdesc))
