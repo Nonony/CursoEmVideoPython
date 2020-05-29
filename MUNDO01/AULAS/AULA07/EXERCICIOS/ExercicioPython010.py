@@ -2,6 +2,10 @@
 # comprar.
 
 carteira = float(input('Quantos reais votem tem em sua carteira? R$ '))
-cot = 1 / 5.3405
-conversao = carteira * cot
-print('Com R${}, você poderá comprar US${:.2f}'.format(carteira, conversao))
+cotdolar = 1 / 5.4257
+print(cotdolar)
+coteuro = 1 / 6.0258
+print(coteuro)
+condolar = carteira * cotdolar
+coneuro = carteira * coteuro
+print('Com R${}, você poderá comprar US${:.2f} ou €{:.2f}'.format(carteira, condolar, coneuro))
