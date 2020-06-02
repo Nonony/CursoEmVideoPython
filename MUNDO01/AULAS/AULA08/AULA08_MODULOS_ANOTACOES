@@ -1,0 +1,66 @@
+Módulos - Bibliotecas
+O python funciona com módulos pré instalados e também com módulos a parte instaláveis.
+
+Na programação, podemos fazer a importação de novos módulos para melhorar o funcionamento.
+
+A inclusão de novos módulos no Pytho é feito através do comando import.
+Este comando importa todas as funcionalidades de um módulo
+Ex?
+Biblioteca
+Bebidas - Doces - Comida
+
+import comida
+import bebidas
+importe doces
+
+É possível também realizar importações parciais de uma biblioteca. Importar apenas aquilo que será utilizado.
+Para tanto utilizaremos from <nome da biblioteca> import <funcionalidade>
+
+from doce import sorvete
+
+Um exemplo de módulo que pode ser importado no Python é o math.
+A biblioteca math (matemática) é padrão do Python e já vem instalada na linguagem.
+
+import math traz uma gama de novas funcionalidades para os programas.
+Exemplos disso são as funcionalidades?
+ceil (arredondamento para cima)
+floor (arredondamento para baixo)
+trunc (elimina o valor depois da vírgula)
+pow (calcula potências)
+sqrt (calcula raiz quadrada)
+factorial (calcula o fatorial de um número)
+Dentre outras.
+
+para importações de mais de uma funcionalidade de uma biblioteca pode-se usar o comando
+
+from math import ceil, pow
+
+Separando as funcionalidades por vírgula
+
+Para consultar as bibliotecas existentes e disponíveis para utilizar, popdemos consultar a documentoação
+no site https://docs.python.org/3/library/index.html
+
+Outra possibilidade é acessarmos o PyPi (Puthon Package Index) link https://pypi.org/search/
+Existe uma variedade gigantesca de módulos que podem ser utilizados no python.
+
+Exemplos de scripts contendo importação de módulos;
+1)
+import math
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num)
+print('A raiz quadrada do número {} é {}.'.format(num, raiz))
+print('A raiz quadrada do número {} é {}.'.format(num, math.floor(raiz)))  # Arredonda pra baixo
+print('A raiz quadrada do número {} é {}.'.format(num, math.ceil(raiz)))  # Arredonda pra cima
+
+2)
+import random
+# Gera um número aleatório do tipo float
+num = random.random()
+# Gera um número aleatório inteiro de 1 a 10
+num2 = random.randint(1, 10)
+print(num)
+print(num2)
+
+3)
+import emoji
+print(emoji.emojize('Olá Mundo! :gem:', use_aliases=True))
