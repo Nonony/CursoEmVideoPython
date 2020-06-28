@@ -2,7 +2,7 @@
 O nome com todas as letras maiúsculas
 O nome com todas as letras minúsculas
 Total de caracteres da frase (sem considerar espaços)
-Quantas letras tem o primeiro nome
+Quantas letras tem o primeiro nome.
 """
 
 nome = str(input('Digite seu nome completo: '))
