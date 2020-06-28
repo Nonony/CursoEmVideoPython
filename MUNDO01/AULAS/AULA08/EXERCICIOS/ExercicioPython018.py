@@ -4,8 +4,8 @@
 import math
 angulo = float(input('Informe o valor do ângulo: '))
 seno = math.sin(math.radians(angulo))
-print(seno)
-coseno = math.cos(math.radians(angulo))
-print(coseno)
+print('O Seno do ângulo {:.0f}° é: {:.2f}'.format(angulo, seno))
+cosseno = math.cos(math.radians(angulo))
+print('O cosseno do ângulo {:.0f}° é: {:.2f}.'.format(angulo, cosseno))
 tangente = math.tan(math.radians(angulo))
-print(tangente)
+print('A tangente do ângulo {:.0f}° é: {:.2f}.'.format(angulo, tangente))
