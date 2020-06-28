@@ -1,0 +1,103 @@
+A aula 09 mostrará como fazer a manipulação de cadeias de textos ou cadeia de strings.
+
+frase = 'Curso em vídeo python'
+Curso em v í d e o  p  y t h o n
+01234567891011121314151617181920
+Quando uma string é digitada o python separa os caracteres em mini espaços de memória.
+No caso da frase Curso em video Python, teremos 20 mini espaços começando do 0 indo até o 20.
+Estes mini espaços são chamados de índices.
+
+
+Técnicas de manipulação de strings
+FATIAMENTO
+
+O fatiamento segue a seguinte lógica [pi:pf:f]
+Onde:
+pi = posição inicial
+pf = posição final
+f = formatação
+
+print(frase[0:9]) -> Posição 0 até a posição 8
+Podemos escrever a mesma sentença do exemplo acima apenas usando print(frase[:9])
+print(frase[9:]) -> Posição 9 até o fim da cadeia de caracteres.
+print(frase[9:27:4]) -> Posição 9 até a 27 pulando de 4 em 4 caracteres
+
+print(frase[9]) -> 'v'
+Imprime o caractere na posição 9 (Caractere 10) da minha cadeia de caracteres.
+print(frase[9:13]) -> 'vide'
+Imprime a sequencia de caracteres inicianda na posição 9 e indo até a posição 12, ignorando a posição 13.
+Se quisermos que o caractere da posição 13 seja exibido devemos colocar 9:14.)
+print(frase[9:21:2]) -> 'vdopto'
+Imprime a sequência de caracteres iniciada na posição 9, indo até a posição 20 pulando de 2 em 2 caracteres.
+print(frase[:5]) -> 'Curso'
+Imprime a sequância de caractereres iniciando na posição 0 até a posição 4.
+print(frase[15:]) -> 'Python'
+Imprime a sequância de caractereres iniciando na posição 15 até a posição 20.
+print(frase[9::3]) -> 'veph'
+Imprime a sequência de caracteres iniciada na posição 9, indo até a última posição da cadeia pulando de 3 em 3 caracteres.
+
+
+ANÁLISE
+
+Para saber o tamanho de uma cadeia de caracteres usamos o comando len()
+len(frase) -> 21
+
+Para contar quantas vezes um determinado caractere aparece na cadeia de caracters usamos o comando count()
+frase.count('o') -> 3
+Lembre-se que para o python, o é diferente de O, a é diferente de A e assim por diante.
+frase.count('o', 0, 13) -> 1
+O comando acima, soma quantas vezes a letra o aparece na sequência de caracteres indo de 0 até 12.
+
+O comando find() exibe a posição inicial onde o termo pesquisado é encontrado.
+Ou seja, a posição inicial em que o termo apareceu.
+frase.find('deo') -> 11
+frase.find('android') -> -1 (Significa que a string pesquisada não foi encontrada na cadeia)
+
+O comando in, mostra se um determinado caractere ou sequência de caracteres existe na frase.
+'Curso in frase' -> True
+'Adroid in frase' -> False
+
+
+TRANSFORMAÇÃO
+
+As listas de string são imutáveis.
+Porém é possível utilizar métodos para transforma-las.
+
+Utilizamos o comando replace() para transformar algum termo da string.
+frase.replace('python','Android') -> 'Curso em vídeo Android'
+
+Para deixar todos os caracteres da string MAIÚSCULAS usamos o comando upper().
+frase.upper() -> 'CURSO EM VIDEO PYTHON'
+
+Para deixar todos os caracteres da string minúsculas, usamos o comando lower()
+frase.lower() -> 'curso em video python'
+
+Para deixarar a primeira letra de cada termo da string maiúscula, usamos o comando capitalize()
+frase.captalize() -> 'Curso em video python'
+
+Para deixar apenas a primeira letra de cada termo da string maiúscula, usamos o comando title()
+frase.title() -> 'Curso Em Vídeo Python'
+
+Para remover espaçoes excedentes no início e no final da string usamos o comando strip().
+frase = '   Aprenda Python   '
+frase.strip() -> 'Aprenda Python'
+
+Para removere apenas os espaços excedentes a direita da string usamos o comando rstrip()
+frase.rstrip() -> '   Aprenda Python'
+
+Para removere apenas os espaços excedentes a esquerda da string usamos o comando lstrip()
+frase.lstrip() -> 'Aprenda Python   '
+
+
+DIVISÃO
+
+Curso em v í d e o  p  y t h o n
+01234567891011121314151617181920
+
+O comando split() divide a sua string em listas observando os espaços entre as palavras.
+frase.split()
+'Curso em Vídeo Python'
+ 01234 01 01234 012345
+
+'-'join(frase)
+'Curso-em-Video-Python'
