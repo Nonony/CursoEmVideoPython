@@ -1,6 +1,11 @@
-# Escreva um programa em Python que leia uma lista de nomes e os mostre aleatoreamente na tela.
+# Escreva um programa em Python que leia quatro nomes e os exiba aleatoreamente na tela.
 
 import random
-nome = ['Carlos', 'Felipe', 'Marcos', 'Rogério', 'Rony']
-lista = random.shuffle(nome)
-print('A ordem dos nomes ficou assim: {}'.format(nome))
+
+nome1 = str(input('Informe o primeiro nome: '))
+nome2 = str(input('Informe o segundo nome: '))
+nome3 = str(input('Informe o terceiro nome: '))
+nome4 = str(input('Informe o quarto nome: '))
+lista = [nome1, nome2, nome3, nome4]
+random.shuffle(lista)
+print('A ordem dos nomes ficou assim: {}'.format(lista))
