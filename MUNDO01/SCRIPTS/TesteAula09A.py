@@ -24,4 +24,3 @@ print(frase.upper().find('EM'))
 print(frase.split())
 dividido = frase.split()
 print(dividido[2][2])
-
