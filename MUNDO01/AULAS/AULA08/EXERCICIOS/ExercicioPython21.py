@@ -9,6 +9,6 @@ pygame.mixer.init()
 pygame.init()
 
 # music = input('E:/Cursos/Python/Curso_em_video_Python/CursoEmVideoPython/MUNDO01/AULAS/AULA08/EXERCICIOS/LS.mp3')
-pygame.mixer.music.load('LS.mp3')
+pygame.mixer.music.load('LostInSpace.mp3')
 pygame.mixer.music.play()
 pygame.event.wait()
