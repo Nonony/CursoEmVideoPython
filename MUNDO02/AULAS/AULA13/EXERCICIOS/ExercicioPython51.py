@@ -17,4 +17,4 @@ pa = pa + 1
 
 for i in range(termo1, pa, razao):
     print('{}'.format(i), end='-> ')
-print('FIM...')    
+print('FIM!')    
