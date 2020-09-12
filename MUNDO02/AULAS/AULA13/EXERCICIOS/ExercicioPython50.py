@@ -9,3 +9,4 @@ for n in range(1, 7):
         cont += 1
         soma += num
 print('Você informou {} números PARES e a soma entre eles é {}'.format(cont, soma))
+print('FIM!')
