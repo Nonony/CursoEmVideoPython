@@ -19,4 +19,4 @@ if invertido == juntando:
     print('Temos um palindromo!')
 else:
     print('O contrário de {} é {}'. format(juntando, invertido))
-    print('A frase digitada não é um palindromo!')    
+    print('A frase digitada não é um palindromo!!')    
